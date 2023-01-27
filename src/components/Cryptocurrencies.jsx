@@ -23,7 +23,7 @@ const Cryptocurrencies = ({ simplified }) => {
   const renderedCryptos = cryptos?.map((currency) => {
     return (
       <Col xs={24} sm={2} lg={6} className="crypto-card" key={currency.uuid}>
-        <Link to={`/crypto/:${currency.uuid}`}>
+        <Link to={`/crypto/${currency.uuid}`}>
           <Card
             title={`${currency.rank}. ${currency.name}`}
             extra={
